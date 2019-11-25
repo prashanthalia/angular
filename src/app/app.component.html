@@ -1,0 +1,9 @@
+<div class="container">
+  <form>
+    <h1>Login</h1>
+    Username: <input type="text"  class="form-control" [(ngModel)]="username" name= "username" #t1><br>
+    Password: <input type="password"  class="form-control"  [(ngModel)]="password" name="password"><br>
+    <input type="submit" value="login" (click)="CheckLogin(t1)"><br>
+    {{msg}}
+  </form>
+</div>
